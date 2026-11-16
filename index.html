@@ -1,0 +1,1365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    // Clean up any stale service workers from other localhost projects
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(regs) {
+        for (var r of regs) r.unregister();
+      }).catch(function() {});
+    }
+  </script>
+  <link rel="preconnect" href="https://cdn.sanity.io" crossorigin />
+  <link rel="preconnect" href="https://kv5wjjmj.apicdn.sanity.io" crossorigin />
+  <link rel="preload" as="image" href="/textures/paper-texture.webp" type="image/webp" fetchpriority="high"
+    crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="/favico.png" />
+  <link rel="apple-touch-icon" href="/favico.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="hJ5aPZ41MvWj8wpgBteG7wWeOaKQk0TrSWgfKrTTE50" />
+  <meta name="google-site-verification" content="xHP9fuTfxKEJaZ1C9d_MYu1jQhgAsHJLSol3j5f55yA" />
+  <meta name="theme-color" content="#fafafa" />
+
+  <!-- SEO Meta Tags -->
+  <title>GD – Award-Winning Creative Developer | Interactive Websites</title>
+  <meta name="description"
+    content="Interactive 3D developer portfolio by Ghanshyam 'GD' Patel. Explore WebGL experiments, React projects & GSAP animations in a hand-drawn gallery." />
+  <meta name="author" content="Ghanshyam Patel" />
+  <meta name="keywords"
+    content="Ghanshyam Patel, GD, Ghanshyam GD Patel, web developer portfolio, 3D web development, Three.js developer, React portfolio, frontend engineer" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://gddev.com/" />
+
+  <!-- Open Graph (Facebook, LinkedIn, Discord) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GD – Award-Winning Creative Developer | Interactive Websites" />
+  <meta property="og:description"
+    content="Portfolio of Ghanshyam Patel (GD) — creative developer building interactive websites with smooth animations, storytelling, and clean code. Award-winning." />
+  <meta property="og:url" content="https://gddev.com/" />
+  <meta property="og:site_name" content="Ghanshyam Patel Portfolio" />
+  <meta property="og:image" content="https://gddev.com/og-image.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GD – Award-Winning Creative Developer | Interactive Websites" />
+  <meta name="twitter:description"
+    content="Portfolio of Ghanshyam Patel (GD) — creative developer building interactive websites with smooth animations, storytelling, and clean code. Award-winning." />
+  <meta name="twitter:image" content="https://gddev.com/og-image.webp" />
+
+  <!-- Google Fonts: Hand-drawn + Primary -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Gloria+Hallelujah&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Preload bazowych tekstur używanych w preloaderze -->
+
+  <style>
+    /* Absolute SEO text hiding - completely accessible to Googlebot, invisible to users */
+    .sr-only-seo {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-BWgbYKJh.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-7YSu33UF.css">
+
+  <!-- Dynamic Structured Data (JSON-LD) — generated from Sanity at build time -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://gddev.com/#person",
+      "name": "Ghanshyam Patel",
+      "alternateName": [
+        "GD",
+        "GD Dev",
+        "Ghanshyam GD Patel"
+      ],
+      "url": "https://gddev.com",
+      "jobTitle": "Creative Frontend Developer",
+      "description": "Ghanshyam Patel, known online as GD, is an award-winning creative developer from Poland who builds interactive, engaging websites from scratch. Currently studying Computer Science at the University of Opole, he specializes in handcrafted web experiences with smooth animations, scroll-driven storytelling, and attention to detail that makes every site feel alive. His core toolkit includes React, Next.js, JavaScript, GSAP (GreenSock Animation Platform), and CSS — the foundation for buttery-smooth page transitions, micro-interactions, and scroll-triggered motion. When a project calls for it, he also works with Three.js, WebGL, and custom shaders to create immersive browser-based experiences, but his heart is in clean, well-animated storytelling websites that people actually enjoy exploring. GD is not a designer — he doesn't work in Figma or Photoshop. He sketches ideas on paper and brings them to life directly in code, designing as he builds. He is also not a 3D modeler — he doesn't create models in Blender — but when clients provide ready assets (GLTF, GLB), he knows how to make them move, interact, and perform at 60fps in the browser. His work has earned international recognition including FWA Site of the Day, GSAP Site of the Day, CSS Design Awards, and Awwwards nominations. Beyond portfolio sites, his projects range from a webcam-controlled browser game using MediaPipe AI (67 Game) to premium commercial websites for photography studios with custom DOM virtualization handling 1000+ images. GD is available for freelance creative development projects worldwide.",
+      "knowsAbout": [
+        "React",
+        "Three.js",
+        "JavaScript",
+        "TypeScript",
+        "GSAP",
+        "Next.js",
+        "WebGL",
+        "3D Graphics",
+        "Web Development"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/ghanshyam-patel-a01766378?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        "https://github.com/gdpatel1348-debug",
+        "https://www.instagram.com/gd_patel_027?srtk=bXFyM251M21tNnBq",
+        "https://x.com/GD_Dev",
+        "https://www.tiktok.com/@gddev",
+        "https://www.youtube.com/@gddev"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://gddev.com/#website",
+      "url": "https://gddev.com",
+      "name": "GD – Award-Winning Creative Developer | Interactive Websites",
+      "description": "Portfolio of Ghanshyam Patel (GD) — creative developer building interactive websites with smooth animations, storytelling, and clean code. Award-winning.",
+      "publisher": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://gddev.com/#profilepage",
+      "url": "https://gddev.com",
+      "mainEntity": {
+        "@id": "https://gddev.com/#person"
+      },
+      "about": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://gddev.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What makes GD different from other developers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GD codes everything from scratch — no WordPress, no Webflow, no templates. His philosophy is \"mechanics first\": he perfects the layout, scroll behavior, and performance before adding any visual effects. This means every site runs smoothly at 60fps even on mobile phones. He combines award-winning creative execution with solid engineering fundamentals, delivering websites that look impressive and actually perform well under the hood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies does GD use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GD's main tools are React, Next.js, JavaScript, GSAP (GreenSock) for animation, and CSS. For smooth scrolling he uses Lenis, and for content management Sanity headless CMS with Vercel hosting. When projects require it, he also works with Three.js, React Three Fiber, and WebGL for interactive browser-based experiences. He codes everything from scratch — no templates, no page builders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is GD and what does he do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GD is the creative alias of Ghanshyam Patel, a frontend developer from Poland who builds interactive, handcrafted websites from scratch. He focuses on smooth animations, scroll-driven storytelling, and clean code — creating sites that feel alive and engaging. His work ranges from animated portfolio websites to webcam-controlled browser games, and has been recognized with awards including FWA Site of the Day and CSS Design Awards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of websites does GD build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GD builds a range of interactive websites — from storytelling portfolios with smooth scroll animations and page transitions, to immersive artist sites with custom visual effects, to clean commercial websites for businesses that need premium aesthetics and fast performance. He prefers projects where animation and user experience tell a story rather than just display content statically. Every project is coded from scratch with no templates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is 67 Game and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "67 Game is a browser-based speed challenge at sixsevengame.vercel.app where your webcam is the controller. You perform the viral '67' trend moves as fast as possible in 15 seconds while MediaPipe tracks your wrists in real-time — entirely in the browser with zero downloads needed. Built with React 19 and MediaPipe WASM on GPU. Features include a global daily leaderboard via Firebase, auto-generated PDF certificates with QR codes, particle effects, and Polish/English language support. Over 100 people queued to play it at a university science festival."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does GD take freelance projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. GD is available for freelance creative development projects worldwide. He works best with clients who have a clear vision or provide designs he can bring to life with animation and code. His sweet spot is storytelling websites with smooth interactions, artist and portfolio sites, and premium business websites. He quotes fixed-price estimates after understanding the full project scope and typically delivers within 4 to 8 weeks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Has GD won any web design awards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. GD's projects have received multiple international awards including FWA Site of the Day, GSAP Site of the Day, CSS Design Awards Special Kudos, and Awwwards nominations. His Young Multi artist website earned CSSDA Site of the Day and Design Nominees Site of the Day. These awards recognize both the creative quality and technical performance of his work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is GD a designer or a 3D modeler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. GD is a developer, not a designer or 3D artist. He doesn't work in Figma, Photoshop, or Blender. He sketches layout ideas on paper and then builds directly in code, designing as he goes. When clients provide finished UI designs or ready 3D models (GLTF/GLB files), he can implement and animate them with precision — but the creation of those assets is not his role."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://gddev.com/#projectslist",
+      "name": "Portfolio Projects by Ghanshyam \"GD\" Patel",
+      "description": "Selected web development projects showcasing React, Three.js, and creative frontend engineering.",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Adam & Ewa – Premium Photography Website with Smooth Animations",
+            "description": "Adam & Ewa is a premium commercial website built from scratch by creative developer Ghanshyam Patel (GD) for a wedding photography and videography duo based in Poland. The project replaces a decade-old legacy site with a bespoke, template-free experience built on React Router v7, GSAP ScrollTrigger, Lenis smooth scroll, and Sanity headless CMS. It features an asymmetrical scattered gallery layout with parallax drift, FLIP-technique shared element lightbox transitions, scroll-driven typography animations with progressive blur reveal, and a custom double-layer DOM virtualization system using IntersectionObserver. This virtualization enables smooth 60fps scrolling through galleries containing up to 1000 high-resolution wedding photos — a massive engineering challenge solved entirely in frontend code. Images are optimized through Sanity's CDN with device-responsive sizing, WebP/AVIF auto-formatting, and LQIP blur-up placeholders. The site scores a perfect 100/100 on Google Lighthouse. Typography combines Cormorant Garamond serif headings with Inter body text on a warm eggshell background. The client manages all content independently through Sanity Studio.",
+            "url": "https://www.adam-ewa.pl",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            },
+            "keywords": "React, CSS, JavaScript, Netlify"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "67 Game – Browser Webcam Game with Real-Time Pose Tracking",
+            "description": "67 Game is a browser-based speed challenge created by Ghanshyam Patel (GD) where your webcam becomes the controller. Players perform the viral '67' trend moves as fast as possible within 15 seconds while MediaPipe Pose Landmarker tracks wrist positions in real-time at 60fps — entirely in the browser with no downloads or plugins required. Built with React 19 and MediaPipe WASM running on GPU, the game features a global daily leaderboard powered by Firebase, auto-generated PDF certificates with QR codes, Canvas-based particle effects, and bilingual support in Polish and English. Debuted at the University of Opole Science Festival 2026 where over 100 people queued to play. Kids speedran attempts while adults were amazed that real-time computer vision runs natively in a web browser. A project that pushes the boundaries of creative frontend engineering.",
+            "url": "https://sixsevengame.vercel.app",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            },
+            "keywords": "React, HTML, JavaScript, Firebase"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Young Multi – Artist Website with Custom WebGL Image Distortion",
+            "description": "Young Multi is an immersive artist website created by creative developer Ghanshyam Patel (GD) for Polish hip-hop artist Young Multi. The project captures the raw, energetic feel of the artist's music through custom WebGL shader effects — real-time image distortion that warps and bends photographs on mouse movement, powered by GPU-accelerated fragment shaders rather than CSS filters or tricks. The dark, moody layout with smooth GSAP scroll transitions lets the photography breathe while keeping a high-energy visual identity. This was GD's breakthrough project that earned major industry recognition including CSS Design Awards (CSSDA) Site of the Day and Design Nominees Site of the Day, putting his work on the international creative development map. Built with React, WebGL, and GSAP, the project shows how creative coding and custom shaders can transform a standard artist page into an interactive experience that truly matches the musician's brand.",
+            "url": "https://young-multi-strona.netlify.app",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            },
+            "keywords": "React, HTML, Tailwind CSS, Netlify"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "GD Sketchbook – Animated UI Components with Hand-Drawn Style",
+            "description": "GD Sketchbook is a collection of custom animated UI components built by creative developer Ghanshyam Patel. Each component features the signature GD hand-drawn sketch aesthetic — pencil textures on interactive elements animated with smooth GSAP transitions in React. The collection showcases that UI doesn't have to follow the same cookie-cutter patterns — a sketched button or a doodle navigation can feel more engaging than a thousand polished gradients. Every component is lightweight, responsive, and built with clean code. It serves as both a personal creative playground and an open resource for developers who want something different for their projects.",
+            "url": "https://gd-ui-components.vercel.app",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            },
+            "keywords": "HTML, CSS, JavaScript, Netlify"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://gddev.com/#project-adam-ewa",
+      "name": "Adam & Ewa – Premium Photography Website with Smooth Animations",
+      "description": "Adam & Ewa is a premium commercial website built from scratch by creative developer Ghanshyam Patel (GD) for a wedding photography and videography duo based in Poland. The project replaces a decade-old legacy site with a bespoke, template-free experience built on React Router v7, GSAP ScrollTrigger, Lenis smooth scroll, and Sanity headless CMS. It features an asymmetrical scattered gallery layout with parallax drift, FLIP-technique shared element lightbox transitions, scroll-driven typography animations with progressive blur reveal, and a custom double-layer DOM virtualization system using IntersectionObserver. This virtualization enables smooth 60fps scrolling through galleries containing up to 1000 high-resolution wedding photos — a massive engineering challenge solved entirely in frontend code. Images are optimized through Sanity's CDN with device-responsive sizing, WebP/AVIF auto-formatting, and LQIP blur-up placeholders. The site scores a perfect 100/100 on Google Lighthouse. Typography combines Cormorant Garamond serif headings with Inter body text on a warm eggshell background. The client manages all content independently through Sanity Studio.",
+      "url": "https://www.adam-ewa.pl",
+      "creator": {
+        "@id": "https://gddev.com/#person"
+      },
+      "keywords": "React, CSS, JavaScript, Netlify"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://gddev.com/#project-67-game",
+      "name": "67 Game – Browser Webcam Game with Real-Time Pose Tracking",
+      "description": "67 Game is a browser-based speed challenge created by Ghanshyam Patel (GD) where your webcam becomes the controller. Players perform the viral '67' trend moves as fast as possible within 15 seconds while MediaPipe Pose Landmarker tracks wrist positions in real-time at 60fps — entirely in the browser with no downloads or plugins required. Built with React 19 and MediaPipe WASM running on GPU, the game features a global daily leaderboard powered by Firebase, auto-generated PDF certificates with QR codes, Canvas-based particle effects, and bilingual support in Polish and English. Debuted at the University of Opole Science Festival 2026 where over 100 people queued to play. Kids speedran attempts while adults were amazed that real-time computer vision runs natively in a web browser. A project that pushes the boundaries of creative frontend engineering.",
+      "url": "https://sixsevengame.vercel.app",
+      "creator": {
+        "@id": "https://gddev.com/#person"
+      },
+      "keywords": "React, HTML, JavaScript, Firebase"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://gddev.com/#project-young-multi",
+      "name": "Young Multi – Artist Website with Custom WebGL Image Distortion",
+      "description": "Young Multi is an immersive artist website created by creative developer Ghanshyam Patel (GD) for Polish hip-hop artist Young Multi. The project captures the raw, energetic feel of the artist's music through custom WebGL shader effects — real-time image distortion that warps and bends photographs on mouse movement, powered by GPU-accelerated fragment shaders rather than CSS filters or tricks. The dark, moody layout with smooth GSAP scroll transitions lets the photography breathe while keeping a high-energy visual identity. This was GD's breakthrough project that earned major industry recognition including CSS Design Awards (CSSDA) Site of the Day and Design Nominees Site of the Day, putting his work on the international creative development map. Built with React, WebGL, and GSAP, the project shows how creative coding and custom shaders can transform a standard artist page into an interactive experience that truly matches the musician's brand.",
+      "url": "https://young-multi-strona.netlify.app",
+      "creator": {
+        "@id": "https://gddev.com/#person"
+      },
+      "keywords": "React, HTML, Tailwind CSS, Netlify"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://gddev.com/#project-ui-comp",
+      "name": "GD Sketchbook – Animated UI Components with Hand-Drawn Style",
+      "description": "GD Sketchbook is a collection of custom animated UI components built by creative developer Ghanshyam Patel. Each component features the signature GD hand-drawn sketch aesthetic — pencil textures on interactive elements animated with smooth GSAP transitions in React. The collection showcases that UI doesn't have to follow the same cookie-cutter patterns — a sketched button or a doodle navigation can feel more engaging than a thousand polished gradients. Every component is lightweight, responsive, and built with clean code. It serves as both a personal creative playground and an open resource for developers who want something different for their projects.",
+      "url": "https://gd-ui-components.vercel.app",
+      "creator": {
+        "@id": "https://gddev.com/#person"
+      },
+      "keywords": "HTML, CSS, JavaScript, Netlify"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://gddev.com/#studio-item-0",
+      "headline": "Codrops Feature – GD Portfolio Built Without 3D Models",
+      "description": "Featured article on Codrops (tympanus.net) by Ghanshyam Patel (GD) titled \"Sketching the Impossible: A 3D Portfolio Built Without a Single 3D Model.\" A technical deep-dive into how a complete lack of Blender skills accidentally led to an award-winning interactive corridor built entirely from flat geometry, hand-drawn pencil textures, and custom GLSL shader paint-reveal effects in React Three Fiber. Published on one of the most respected creative frontend development publications in the world.",
+      "url": "https://tympanus.net/codrops/2026/06/11/sketching-the-impossible-a-3d-portfolio-built-without-a-single-3d-model/",
+      "image": "https://cdn.sanity.io/images/kv5wjjmj/production/f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512.webp",
+      "datePublished": "2026-06-11T12:00:00Z",
+      "author": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://gddev.com/#studio-item-1",
+      "name": "GD YouTube Channel – Creative Development Videos",
+      "description": "The GD YouTube channel by Ghanshyam Patel features longer-form creative web development content including full project walkthroughs, extended coding sessions, website showcase compilations, and behind-the-scenes looks at building interactive websites with React, GSAP, Three.js, and custom shaders. Subscribe for in-depth creative frontend content.",
+      "url": "https://www.youtube.com/@gddev",
+      "contentUrl": "https://www.youtube.com/@gddev",
+      "thumbnailUrl": "https://cdn.sanity.io/images/kv5wjjmj/production/0dca95901d02de9dbba8c0c7da5fffface9957b3-2048x1024.webp",
+      "uploadDate": "2026-07-18T12:00:00Z",
+      "author": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "SocialMediaPosting",
+      "@id": "https://gddev.com/#studio-item-2",
+      "headline": "67 Game Festival Debut – GD Dev (LinkedIn & X)",
+      "description": "Post by Ghanshyam Patel (GD) about debuting his browser-based webcam game \"67 Game\" at the University of Opole Science Festival. Over 100 attendees queued to play — performing the viral 67 trend moves tracked by MediaPipe in real-time via Chrome. Kids speedran attempts, parents were dragged in, and adults kept asking \"this is just a website?\" Built with React 19, MediaPipe WASM on GPU, Firebase leaderboard, and auto-generated PDF certificates.",
+      "url": "https://www.linkedin.com/posts/gddev_100-people-played-a-game-i-coded-using-activity-7462834233238097920-Eg-i",
+      "image": "https://cdn.sanity.io/images/kv5wjjmj/production/f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512.webp",
+      "datePublished": "2026-06-20T12:00:00Z",
+      "author": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://gddev.com/#studio-item-3",
+      "headline": "WebGPU.com Showcase – GD Paper Tear Portfolio (2026)",
+      "description": "The GD portfolio was featured on WebGPU.com, the leading WebGL and WebGPU community showcase. The article, titled \"A Paper Tear, a Hand-Drawn Corridor, and Sketches That Finish Themselves,\" highlights the project's unique approach — a sheet of paper rips open and drops visitors into a hand-drawn corridor where pencil-sketched frames paint themselves in as you walk up to them. Tagged with WebGL, Three.js, GLSL, GSAP, React Three Fiber, and Cartoon Shading.",
+      "url": "https://www.webgpu.com/showcase/gd-portfolio-paper-tear-corridor/",
+      "image": "https://cdn.sanity.io/images/kv5wjjmj/production/f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512.webp",
+      "datePublished": "2026-04-13T12:00:00Z",
+      "timeRequired": "PT3M",
+      "author": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "SocialMediaPosting",
+      "@id": "https://gddev.com/#studio-item-4",
+      "headline": "GD on Instagram – Creative Developer Behind the Scenes",
+      "description": "Follow Ghanshyam Patel (GD) on Instagram at @gd.dev for short-form creative development content, web design inspiration reels, behind-the-scenes glimpses of award-winning projects, and artistic experiments. GD shares the websites and interactive experiences that inspire his work as a creative frontend developer.",
+      "url": "https://www.instagram.com/gd_patel_027?srtk=bXFyM251M21tNnBq",
+      "image": "https://cdn.sanity.io/images/kv5wjjmj/production/c8ad8f3e552d4151cb1b46618f8cad431316953f-1024x2048.webp",
+      "datePublished": "2026-07-18T12:00:00Z",
+      "author": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://gddev.com/#studio-item-5",
+      "headline": "Polish Press – GD Named World's Best Website Creator",
+      "description": "News article by Strzelce360.pl (local Polish press) covering how Ghanshyam Patel, a Computer Science student from Strzelce Opolskie, Poland, earned international recognition as one of the world's top website creators. The article highlights his FWA Site of the Day award and coverage by major industry publications for his interactive sketch portfolio at gddev.com. A hometown story about a creative developer making waves globally.",
+      "url": "https://www.strzelce360.pl/artykul/11843,strzelczanin-najlepszym-tworca-stron-internetowych-na-swiecie",
+      "image": "https://cdn.sanity.io/images/kv5wjjmj/production/f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512.webp",
+      "datePublished": "2026-07-12T12:00:00Z",
+      "timeRequired": "PT4M",
+      "author": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "SocialMediaPosting",
+      "@id": "https://gddev.com/#studio-item-6",
+      "headline": "Adam & Ewa Website Launch – GD Dev (LinkedIn & X)",
+      "description": "Launch announcement by Ghanshyam Patel (GD) for the Adam & Ewa premium wedding photography website. The post showcases the bespoke React build with GSAP ScrollTrigger animations, FLIP-technique lightbox transitions, and a custom DOM virtualization system handling up to 1000 high-res photos at 60fps. Shared on LinkedIn and X (Twitter).",
+      "url": "https://www.linkedin.com/posts/gddev_webdesign-gsap-frontend-activity-7455173978056224768-dyhz",
+      "image": "https://cdn.sanity.io/images/kv5wjjmj/production/f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512.webp",
+      "datePublished": "2026-05-15T12:00:00Z",
+      "author": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://gddev.com/#studio-item-7",
+      "name": "GD on TikTok – Creative Coding & Web Inspiration",
+      "description": "Follow Ghanshyam Patel (GD) on TikTok at @gddev for short-form videos showcasing stunning websites from around the web, creative coding experiments, and behind-the-scenes looks at interactive frontend development. Quick, visual, and fun content for web design enthusiasts.",
+      "url": "https://www.tiktok.com/@gddev",
+      "contentUrl": "https://www.tiktok.com/@gddev",
+      "thumbnailUrl": "https://cdn.sanity.io/images/kv5wjjmj/production/c8ad8f3e552d4151cb1b46618f8cad431316953f-1024x2048.webp",
+      "uploadDate": "2026-07-18T12:00:00Z",
+      "author": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "SocialMediaPosting",
+      "@id": "https://gddev.com/#studio-item-8",
+      "headline": "GD Sketchbook UI Components Launch (LinkedIn & X)",
+      "description": "Launch announcement by Ghanshyam Patel (GD) for GD Sketchbook — a collection of custom hand-drawn animated UI components built with React and GSAP. The post describes how repeatedly rebuilding the same UI animation patterns across projects led to creating a reusable, open component library with the signature sketch aesthetic. Shared on LinkedIn and X (Twitter).",
+      "url": "https://www.linkedin.com/posts/gddev_i-kept-rebuilding-the-same-ui-animations-activity-7472981452289163264-gANX",
+      "image": "https://cdn.sanity.io/images/kv5wjjmj/production/f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512.webp",
+      "datePublished": "2026-07-18T12:00:00Z",
+      "author": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "SocialMediaPosting",
+      "@id": "https://gddev.com/#studio-item-9",
+      "headline": "Google Antigravity 2.0 – Creative AI Experiment by GD",
+      "description": "Creative coding experiment by Ghanshyam Patel (GD) reimagining Google's classic Antigravity easter egg with modern AI-powered interactions and creative frontend techniques. A playful side project demonstrating how creative developers approach experimental web concepts beyond traditional portfolio work. Shared on LinkedIn and X (Twitter).",
+      "url": "https://www.linkedin.com/posts/gddev_ai-creativecoding-activity-7467908125593976832-o9HE",
+      "image": "https://cdn.sanity.io/images/kv5wjjmj/production/f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512.webp",
+      "datePublished": "2026-07-04T12:00:00Z",
+      "author": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "SocialMediaPosting",
+      "@id": "https://gddev.com/#studio-item-10",
+      "headline": "Portfolio Launch Announcement – GD Dev (LinkedIn & X)",
+      "description": "The original announcement post by Ghanshyam Patel (GD) sharing the launch of his interactive sketch portfolio at gddev.com. Posted on LinkedIn and X (Twitter), the post introduces the walkable 3D corridor concept, hand-drawn textures, and custom shader effects that would later earn FWA Site of the Day, Awwwards Honors, and CSSDA Special Kudos.",
+      "url": "https://www.linkedin.com/posts/gddev_its-finally-live-i-just-launched-my-new-activity-7441409690342825984-Kgbk",
+      "image": "https://cdn.sanity.io/images/kv5wjjmj/production/f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512.webp",
+      "datePublished": "2026-04-01T12:00:00Z",
+      "author": {
+        "@id": "https://gddev.com/#person"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://gddev.com/#awardslist",
+      "name": "Web Design Awards received by Ghanshyam \"GD\" Patel",
+      "numberOfItems": 16,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Honorable Mention — Awwwards Honorable Mention – GD Portfolio Website (2026)",
+            "dateCreated": "2026-04-30T12:00:00Z",
+            "url": "https://www.awwwards.com/sites/ghanshyam-patel-folio",
+            "description": "The GD portfolio by Ghanshyam Patel received an Honorable Mention from Awwwards in April 2026. Awwwards is the world's leading platform recognizing the best of web design and development, with jury members from top agencies and studios globally. The portfolio was evaluated on design, usability, creativity, and content. Built with React, Three.js, and GSAP, the project showcases an interactive sketch-textured corridor where visitors navigate through doors to discover gallery, studio, and contact rooms — a storytelling approach to portfolio design that earned recognition from the industry's most competitive stage.",
+            "award": "Honorable Mention",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Honorable Mention — Muzli Honor – GD Interactive Sketch Portfolio (2026)",
+            "dateCreated": "2026-07-15T12:00:00Z",
+            "url": "https://muz.li/picked/interactive-3d-sketch-portfolio-gd/",
+            "description": "The GD portfolio was honored by Muzli (muz.li), a leading design inspiration platform by InVision used by millions of designers worldwide. Muzli curates the best digital projects across the web, and being selected as a Muzli Honor recognizes the portfolio's exceptional creative quality and innovative approach to interactive web design. The portfolio by Ghanshyam Patel features a sketch-textured 3D corridor, custom shader effects, and storytelling-driven navigation built with React and Three.js.",
+            "award": "Honorable Mention",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Site of the Day — CSSLight Featured of the Day – GD Creative Portfolio (2026)",
+            "dateCreated": "2026-05-08T12:00:00Z",
+            "url": "https://www.csslight.com/website/73073/Ghanshyam-GD-Patel-Portfolio",
+            "description": "The GD portfolio was selected as Featured of the Day by CSSLight (csslight.com), a web design gallery that highlights professional websites demonstrating excellence in aesthetics, creativity, and coding quality. The portfolio by creative developer Ghanshyam Patel features a unique sketch-textured interactive corridor, custom GLSL shaders, and storytelling-driven navigation built with React, Three.js, and GSAP.",
+            "award": "Site of the Day",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Honorable Mention — CSSDA Special Kudos – GD Creative Developer Portfolio (2025)",
+            "dateCreated": "2026-04-25T12:00:00Z",
+            "url": "https://www.cssdesignawards.com/sites/ghanshyam-patel/",
+            "description": "Ghanshyam Patel (GD) was awarded CSS Design Awards Special Kudos for his creative developer portfolio at gddev.com. CSSDA (CSS Design Awards) is a premier international web design and development award platform where projects are judged by an industry panel on UI design, UX innovation, and technical execution. The Special Kudos distinction recognizes projects that demonstrate exceptional quality across all judging criteria. The portfolio features interactive sketch-style visuals, smooth GSAP animations, and a unique room-based navigation system coded entirely from scratch.",
+            "award": "Honorable Mention",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Site of the Day — Orpetron Site of the Day – GD Developer Portfolio (2026)",
+            "dateCreated": "2026-04-01T12:00:00Z",
+            "url": "https://orpetron.com/sites/ghanshyam-patel-portfolio/",
+            "description": "The GD portfolio received Site of the Day from Orpetron Web Design Awards (orpetron.com), an international platform recognizing exceptional digital work by freelance designers, creative agencies, and developers. The award honors the portfolio's innovative room-based navigation, sketch-textured visuals, and smooth interactive animations. Created from scratch by creative developer Ghanshyam Patel using React, Three.js, and GSAP.",
+            "award": "Site of the Day",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Site of the Day — Design Nominees Site of the Day – Young Multi Website (2026)",
+            "dateCreated": "2026-01-17T12:00:00Z",
+            "url": "https://www.designnominees.com/sites/young-multi",
+            "description": "The Young Multi artist website by Ghanshyam Patel (GD) was awarded Site of the Day by Design Nominees (designnominees.com), an international platform recognizing outstanding websites, apps, and games. The project features custom WebGL distortion shaders on photography, dark moody aesthetics, and smooth GSAP scroll transitions — an interactive experience that captures the raw energy of the Polish hip-hop artist's music.",
+            "award": "Site of the Day",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Honorable Mention — CSSDA Public UI Award – GD Interactive Portfolio Site (2026)",
+            "dateCreated": "2026-04-25T12:00:00Z",
+            "url": "https://www.cssdesignawards.com/sites/ghanshyam-patel/",
+            "description": "The GD portfolio at gddev.com received the CSS Design Awards Public UI Award through community voting in April 2026. This award recognizes the project's visual interface design — hand-drawn sketch textures on 3D geometry, a custom paint-reveal shader effect on hover, and a warm, cohesive color palette that gives the site a unique handcrafted aesthetic. Created by Ghanshyam Patel using React, Three.js, and GSAP.",
+            "award": "Honorable Mention",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Site of the Day — FWA Site of the Day – GD Interactive Sketch Portfolio (2026)",
+            "dateCreated": "2026-04-25T12:00:00Z",
+            "url": "https://thefwa.com/cases/ghanshyam-patel-portfolio",
+            "description": "Ghanshyam Patel (GD) received the prestigious FWA Site of the Day award on April 25, 2026 for his interactive sketch portfolio at gddev.com. The FWA (Favourite Website Awards) is one of the most recognized international platforms honoring cutting-edge digital design and creative development. The awarded portfolio features a walkable 3D corridor built with React Three Fiber, hand-drawn sketch textures, custom GLSL shader paint-reveal effects, and a multi-input camera system. This recognition confirms the project's innovation in interactive web storytelling and frontend engineering.",
+            "award": "Site of the Day",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Site of the Day — CSS Winner Site of the Day – Young Multi Artist Website (2026)",
+            "dateCreated": "2026-01-24T12:00:00Z",
+            "url": "https://www.csswinner.com/details/young-multi-official-experience/19045",
+            "description": "The Young Multi artist website by creative developer Ghanshyam Patel (GD) earned CSS Winner Site of the Day on January 24, 2026. The project features custom WebGL image distortion shaders that warp and bend photographs on mouse interaction, delivering a raw, energetic visual experience matching the Polish hip-hop artist's brand. Built with React, WebGL, and GSAP, the site demonstrates how creative frontend code can transform standard artist pages into immersive interactive galleries.",
+            "award": "Site of the Day",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Honorable Mention — CSSDA Public Innovation Award – GD Portfolio Website (2026)",
+            "dateCreated": "2026-04-25T12:00:00Z",
+            "url": "https://www.cssdesignawards.com/sites/ghanshyam-patel/",
+            "description": "The CSS Design Awards community voted GD's portfolio as a winner of the Public Innovation Award in April 2026. The award recognizes the project's innovative approach to portfolio design — replacing traditional page scrolling with an explorable 3D environment, using hand-drawn textures instead of polished 3D models, and implementing a custom GLSL shader system for interactive paint-reveal effects. Built from scratch by Ghanshyam Patel with React Three Fiber and GSAP.",
+            "award": "Honorable Mention",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Site of the Day — Design Nominees Site of the Day – GD Portfolio (2026)",
+            "dateCreated": "2026-05-02T12:00:00Z",
+            "url": "https://www.designnominees.com/sites/ghanshyam-patel-portfoio",
+            "description": "GD's interactive sketch portfolio at gddev.com was selected as Site of the Day by Design Nominees on May 2, 2026. Design Nominees is an international web design awards platform that evaluates projects on creativity, design quality, and technical execution. The portfolio by Ghanshyam Patel features a walkable corridor with hand-drawn textures, interactive door navigation, and custom shader effects — all built from scratch with React and Three.js.",
+            "award": "Site of the Day",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Site of the Day — Top Design King Site of the Day – GD Portfolio (2026)",
+            "dateCreated": "2026-05-12T12:00:00Z",
+            "url": "https://topdesignking.com/website/3621/ghanshyam-patel-portfolio",
+            "description": "GD's portfolio at gddev.com was named King of the Day (Site of the Day) by Top Design King (topdesignking.com), an international web design awards platform that showcases and promotes creative websites based on design, usability, and innovation. The portfolio by Ghanshyam Patel features hand-drawn sketch visuals, interactive door navigation, and smooth GSAP-driven animations — a handcrafted web experience built entirely from scratch.",
+            "award": "Site of the Day",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Site of the Day — Web Design of the Day – GD Portfolio Website (2026)",
+            "dateCreated": "2026-05-01T12:00:00Z",
+            "url": "https://wdawards.com/web/ghanshyam-patel-folio",
+            "description": "GD's interactive portfolio at gddev.com was selected as Web Design of the Day by WD awards, a web design gallery that showcases and promotes creative digital projects. The portfolio by Ghanshyam Patel features hand-drawn sketch textures, interactive room navigation, custom shader paint-reveal effects, and smooth GSAP animations — all built from scratch without templates.",
+            "award": "Site of the Day",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Site of the Day — Orpetron Site of the Day – Young Multi Artist Website (2026)",
+            "dateCreated": "2026-01-29T12:00:00Z",
+            "url": "https://orpetron.com/sites/young-multi/",
+            "description": "The Young Multi artist website by Ghanshyam Patel (GD) was awarded Orpetron Site of the Day on January 29, 2026. Orpetron Web Design Awards recognizes outstanding creativity and technical execution in digital projects worldwide. The website features custom WebGL image distortion shaders, dark atmospheric layout, and GSAP-powered scroll transitions that capture the energy of the Polish hip-hop artist's brand.",
+            "award": "Site of the Day",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Site of the Day — CSS Winner Site of the Day – GD Developer Portfolio (2026)",
+            "dateCreated": "2026-03-25T12:00:00Z",
+            "url": "https://www.csswinner.com/details/ghanshyam-patel-portfolio/19143",
+            "description": "GD's creative developer portfolio at gddev.com was selected as CSS Winner Site of the Day on March 25, 2026. CSS Winner (csswinner.com) is an international web design award platform that evaluates websites on design quality, usability, and creative innovation. The portfolio features hand-drawn sketch textures animated with custom shaders, room-based navigation through interactive doors, and buttery-smooth GSAP-powered transitions — all coded from scratch by Ghanshyam Patel without templates or page builders.",
+            "award": "Site of the Day",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Honorable Mention — CSSDA Public UX Award – GD Creative Portfolio Website (2026)",
+            "dateCreated": "2026-04-25T12:00:00Z",
+            "url": "https://www.cssdesignawards.com/sites/ghanshyam-patel/",
+            "description": "Ghanshyam Patel's GD portfolio received the CSS Design Awards Public UX Award through community voting in April 2026. This recognition highlights the project's intuitive user experience — visitors navigate a sketch-textured corridor through interactive doors, with smooth animations and a camera system that responds to scroll, mouse, and mobile gyroscope. The award reflects positive community feedback on the portfolio's navigation flow and interaction design.",
+            "award": "Honorable Mention",
+            "creator": {
+              "@id": "https://gddev.com/#person"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <script>
+    // Offline resilience & fast-cache for Sanity CDN queries
+    (function () {
+      const cachedData = {
+        gallery: [
+  {
+    "_createdAt": "2026-07-17T16:34:24Z",
+    "_id": "buckssauce-proj-id",
+    "_rev": "VYQz6kRGBI2TD0HjVxXkgA",
+    "_system": {
+      "base": {
+        "id": "buckssauce-proj-id",
+        "rev": "VYQz6kRGBI2TD0HjVx7Zsa"
+      }
+    },
+    "_type": "galleryProject",
+    "_updatedAt": "2026-07-17T22:25:15Z",
+    "description": "A bold, award-grade direct-to-consumer storefront built for Bucks Sauce. Engineered with Next.js 16, React 19, and Tailwind CSS v4, it features high-energy streetwear-inspired animations, cream-to-ink color inversions, custom sound effects, and interactive product trays.",
+    "frontImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-buckssaucefront-1696x2528-png",
+        "_type": "reference"
+      }
+    },
+    "paintedImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-buckssaucepainted-1696x2528-png",
+        "_type": "reference"
+      }
+    },
+    "seoDescription": "Bucks Sauce is a full-stack e-commerce rebuild engineered by Ghanshyam Patel (GD) featuring Next.js 16, React 19, and Tailwind CSS v4 with custom audio and streetwear aesthetic.",
+    "seoTitle": "Bucks Sauce – Full-Stack BBQ Sauce Storefront",
+    "slug": {
+      "_type": "slug",
+      "current": "bucks-sauce"
+    },
+    "techStack": [
+      "reactlogo.webp",
+      "tailwindlogo.webp",
+      "jslogo.webp",
+      "netlifylogo.webp"
+    ],
+    "title": "BUCKS SAUCE",
+    "url": "https://buckssauce-gamma.vercel.app"
+  },
+  {
+    "_createdAt": "2026-07-17T16:57:47Z",
+    "_id": "simplesalad-proj-id",
+    "_rev": "EyALIez9Ug6PSJt2RnZN7n",
+    "_system": {
+      "base": {
+        "id": "simplesalad-proj-id",
+        "rev": "kHQQtMLNbIJHgj7z85EnTO"
+      }
+    },
+    "_type": "galleryProject",
+    "_updatedAt": "2026-07-17T22:25:02Z",
+    "description": "An immersive, interactive 3D culinary website. It features custom WebGL/Three.js 3D salad bowl physics, interactive ingredient selection, responsive video playback, and organic page transitions designed to celebrate fresh, wholesome food.",
+    "frontImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-simplesaladfront-1696x2528-png",
+        "_type": "reference"
+      }
+    },
+    "paintedImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-simplesaladpainted-1696x2528-png",
+        "_type": "reference"
+      }
+    },
+    "seoDescription": "The Simple Salad is an interactive 3D web experience built by creative developer Ghanshyam Patel (GD) combining Three.js 3D models with interactive ingredients.",
+    "seoTitle": "The Simple Salad – Interactive 3D Culinary Experience",
+    "slug": {
+      "_type": "slug",
+      "current": "simple-salad"
+    },
+    "techStack": [
+      "reactlogo.webp",
+      "htmllogo.webp",
+      "jslogo.webp",
+      "csslogo.webp"
+    ],
+    "title": "THE SIMPLE SALAD",
+    "url": "https://the-simpal-salad.vercel.app"
+  },
+  {
+    "_createdAt": "2026-07-17T14:42:32Z",
+    "_id": "ecocredit-proj-id",
+    "_rev": "EyALIez9Ug6PSJt2RnZNW3",
+    "_system": {
+      "base": {
+        "id": "ecocredit-proj-id",
+        "rev": "kHQQtMLNbIJHgj7z83kNXq"
+      }
+    },
+    "_type": "galleryProject",
+    "_updatedAt": "2026-07-17T22:25:31Z",
+    "description": "A sustainable climate fintech platform integrating industrial IoT environmental telemetry, real-time sensor streams, and verified carbon accounting to compute sustainability-based credit scores for banks and carbon markets.",
+    "frontImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ecocreditfront-1696x2528-png",
+        "_type": "reference"
+      }
+    },
+    "paintedImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ecocreditpainted-1696x2528-png",
+        "_type": "reference"
+      }
+    },
+    "seoDescription": "EcoCredit India is an industrial climate fintech intelligence platform engineered by Ghanshyam Patel (GD) that computes ESG credit scores from real-time environmental data.",
+    "seoTitle": "EcoCredit India – Climate Fintech & Carbon Intelligence",
+    "slug": {
+      "_type": "slug",
+      "current": "ecocredit-india"
+    },
+    "techStack": [
+      "reactlogo.webp",
+      "jslogo.webp",
+      "htmllogo.webp",
+      "csslogo.webp"
+    ],
+    "title": "ECOCREDIT INDIA",
+    "url": "https://eco-credit-india.vercel.app"
+  },
+  {
+    "_createdAt": "2026-07-17T17:03:32Z",
+    "_id": "financialengine-proj-id",
+    "_rev": "VYQz6kRGBI2TD0HjVxXjsq",
+    "_system": {
+      "base": {
+        "id": "financialengine-proj-id",
+        "rev": "VYQz6kRGBI2TD0HjVxCNle"
+      }
+    },
+    "_type": "galleryProject",
+    "_updatedAt": "2026-07-17T22:24:47Z",
+    "description": "Personal Financial Command Center — a full-stack financial analysis and asset guidance engine. Features automated market telemetry, portfolio risk modeling, cash flow forecasting, and real-time interactive decision dashboards.",
+    "frontImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-financialenginefront-1696x2528-png",
+        "_type": "reference"
+      }
+    },
+    "paintedImage": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-financialenginepainted-1696x2528-png",
+        "_type": "reference"
+      }
+    },
+    "seoDescription": "Financial Guidance Engine is a full-stack personal finance analysis and wealth intelligence system built by Ghanshyam Patel (GD).",
+    "seoTitle": "Financial Guide Engine – Personal Wealth Command Center",
+    "slug": {
+      "_type": "slug",
+      "current": "financial-engine"
+    },
+    "techStack": [
+      "jslogo.webp",
+      "reactlogo.webp",
+      "tailwindlogo.webp",
+      "netlifylogo.webp"
+    ],
+    "title": "FINANCIAL ENGINE",
+    "url": "https://g-ds-portfolio-site.vercel.app"
+  }
+],
+        studio: [{ "_createdAt": "2026-07-17T23:19:15Z", "_id": "1b5dd93f-5177-40ef-a455-14cdf44d152c", "_rev": "kHQQtMLNbIJHgj7z85gfmQ", "_type": "studioItem", "_updatedAt": "2026-07-17T23:20:12Z", "date": "2026-06-11", "description": "A deep-dive article on Codrops about how GD built a 3D portfolio without a single 3D model — using flat geometry, hand-drawn textures, and custom GLSL shaders.", "device": "monitor", "frontTexture": { "_type": "image", "asset": { "_ref": "image-f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512-webp", "_type": "reference" } }, "paintedFrontTexture": { "_type": "image", "asset": { "_ref": "image-85434a6feba56b393f5872e16c815e2fce83066d-2048x1024-webp", "_type": "reference" } }, "platform": "codrops", "seoDescription": "Featured article on Codrops (tympanus.net) by Ghanshyam Patel (GD) titled \"Sketching the Impossible: A 3D Portfolio Built Without a Single 3D Model.\" A technical deep-dive into how a complete lack of Blender skills accidentally led to an award-winning interactive corridor built entirely from flat geometry, hand-drawn pencil textures, and custom GLSL shader paint-reveal effects in React Three Fiber. Published on one of the most respected creative frontend development publications in the world.", "seoTitle": "Codrops Feature – GD Portfolio Built Without 3D Models", "title": "Sketching the Impossible – Codrops Feature", "url": "https://tympanus.net/codrops/2026/06/11/sketching-the-impossible-a-3d-portfolio-built-without-a-single-3d-model/" }, { "_createdAt": "2026-07-17T23:27:05Z", "_id": "1ee8bd4b-fa5d-49d5-9803-2ad3de7ec1ba", "_rev": "kHQQtMLNbIJHgj7z85hYBO", "_type": "studioItem", "_updatedAt": "2026-07-17T23:27:42Z", "date": "2026-07-18", "description": "GD's YouTube channel — longer-form creative web development content, full project walkthroughs, and extended coding sessions.", "device": "tv", "frontTexture": { "_type": "image", "asset": { "_ref": "image-0dca95901d02de9dbba8c0c7da5fffface9957b3-2048x1024-webp", "_type": "reference" } }, "paintedFrontTexture": { "_type": "image", "asset": { "_ref": "image-097f06a47d4759e495af42f03528c82873e4c623-1720x860-webp", "_type": "reference" } }, "platform": "youtube", "seoDescription": "The GD YouTube channel by Ghanshyam Patel features longer-form creative web development content including full project walkthroughs, extended coding sessions, website showcase compilations, and behind-the-scenes looks at building interactive websites with React, GSAP, Three.js, and custom shaders. Subscribe for in-depth creative frontend content.", "seoTitle": "GD YouTube Channel – Creative Development Videos", "title": "MY YOUTUBE", "url": "https://www.youtube.com/@gddev" }, { "_createdAt": "2026-07-17T23:24:51Z", "_id": "371407e3-2663-4721-a212-c28b3449f9b9", "_rev": "kHQQtMLNbIJHgj7z85hGme", "_type": "studioItem", "_updatedAt": "2026-07-17T23:25:28Z", "date": "2026-06-20", "description": "Post about debuting the 67 Game at a university science festival — kids formed queues, adults couldn't believe it runs in a browser.", "device": "monitor", "frontTexture": { "_type": "image", "asset": { "_ref": "image-f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512-webp", "_type": "reference" } }, "paintedFrontTexture": { "_type": "image", "asset": { "_ref": "image-85434a6feba56b393f5872e16c815e2fce83066d-2048x1024-webp", "_type": "reference" } }, "platform": "linkedin", "seoDescription": "Post by Ghanshyam Patel (GD) about debuting his browser-based webcam game \"67 Game\" at the University of Opole Science Festival. Over 100 attendees queued to play — performing the viral 67 trend moves tracked by MediaPipe in real-time via Chrome. Kids speedran attempts, parents were dragged in, and adults kept asking \"this is just a website?\" Built with React 19, MediaPipe WASM on GPU, Firebase leaderboard, and auto-generated PDF certificates.", "seoTitle": "67 Game Festival Debut – GD Dev (LinkedIn & X)", "title": "67 Game – 100+ People Played", "url": "https://www.linkedin.com/posts/gddev_100-people-played-a-game-i-coded-using-activity-7462834233238097920-Eg-i" }, { "_createdAt": "2026-07-17T23:21:16Z", "_id": "47eeb34b-2bcb-4d58-a785-2f633603cd21", "_rev": "EyALIez9Ug6PSJt2RnZwO3", "_type": "studioItem", "_updatedAt": "2026-07-17T23:22:03Z", "date": "2026-04-13", "description": "GD's portfolio featured on WebGPU.com — \"A Paper Tear, a Hand-Drawn Corridor, and Sketches That Finish Themselves.\"", "device": "monitor", "frontTexture": { "_type": "image", "asset": { "_ref": "image-f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512-webp", "_type": "reference" } }, "paintedFrontTexture": { "_type": "image", "asset": { "_ref": "image-85434a6feba56b393f5872e16c815e2fce83066d-2048x1024-webp", "_type": "reference" } }, "platform": "blog", "readTime": "3 min", "seoDescription": "The GD portfolio was featured on WebGPU.com, the leading WebGL and WebGPU community showcase. The article, titled \"A Paper Tear, a Hand-Drawn Corridor, and Sketches That Finish Themselves,\" highlights the project's unique approach — a sheet of paper rips open and drops visitors into a hand-drawn corridor where pencil-sketched frames paint themselves in as you walk up to them. Tagged with WebGL, Three.js, GLSL, GSAP, React Three Fiber, and Cartoon Shading.", "seoTitle": "WebGPU.com Showcase – GD Paper Tear Portfolio (2026)", "title": "WebGPU Showcase – Paper Tear Corridor", "url": "https://www.webgpu.com/showcase/gd-portfolio-paper-tear-corridor/" }, { "_createdAt": "2026-07-17T23:16:03Z", "_id": "5479ed60-479d-446c-b643-1681e58b4e0d", "_rev": "kHQQtMLNbIJHgj7z85gVjU", "_system": { "base": { "id": "5479ed60-479d-446c-b643-1681e58b4e0d", "rev": "VYQz6kRGBI2TD0HjVxZFyM" } }, "_type": "studioItem", "_updatedAt": "2026-07-17T23:17:15Z", "date": "2026-07-18", "description": "Follow GD on Instagram for behind-the-scenes looks at creative web projects, site inspirations, and short-form content.", "device": "phone", "frontTexture": { "_type": "image", "asset": { "_ref": "image-c8ad8f3e552d4151cb1b46618f8cad431316953f-1024x2048-webp", "_type": "reference" } }, "paintedFrontTexture": { "_type": "image", "asset": { "_ref": "image-cff3658c47cc85a7ad676f540d26a8e6a0754c3c-512x1024-webp", "_type": "reference" } }, "platform": "instagram", "seoDescription": "Follow Ghanshyam Patel (GD) on Instagram at @gd.dev for short-form creative development content, web design inspiration reels, behind-the-scenes glimpses of award-winning projects, and artistic experiments. GD shares the websites and interactive experiences that inspire his work as a creative frontend developer.", "seoTitle": "GD on Instagram – Creative Developer Behind the Scenes", "title": "MY INSTAGRAM", "url": "https://www.instagram.com/gd_patel_027?srtk=bXFyM251M21tNnBq", "views": "999" }, { "_createdAt": "2026-07-17T23:20:24Z", "_id": "61004a68-690e-4b1b-9a28-5c95f3c49d30", "_rev": "kHQQtMLNbIJHgj7z85gi9I", "_type": "studioItem", "_updatedAt": "2026-07-17T23:21:08Z", "date": "2026-07-12", "description": "Local Polish news article about Ghanshyam Patel winning international web design awards — \"A resident of Strzelce Opolskie turns out to be the world's best website creator.\"", "device": "monitor", "frontTexture": { "_type": "image", "asset": { "_ref": "image-f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512-webp", "_type": "reference" } }, "paintedFrontTexture": { "_type": "image", "asset": { "_ref": "image-85434a6feba56b393f5872e16c815e2fce83066d-2048x1024-webp", "_type": "reference" } }, "platform": "blog", "readTime": "4 min", "seoDescription": "News article by Strzelce360.pl (local Polish press) covering how Ghanshyam Patel, a Computer Science student from Strzelce Opolskie, Poland, earned international recognition as one of the world's top website creators. The article highlights his FWA Site of the Day award and coverage by major industry publications for his interactive sketch portfolio at gddev.com. A hometown story about a creative developer making waves globally.", "seoTitle": "Polish Press – GD Named World's Best Website Creator", "title": "Strzelczanin najlepszym twórcą stron na świecie", "url": "https://www.strzelce360.pl/artykul/11843,strzelczanin-najlepszym-tworca-stron-internetowych-na-swiecie" }, { "_createdAt": "2026-07-17T23:23:27Z", "_id": "7ef0eb6f-fe9a-45a0-b75c-8d4c6798b05e", "_rev": "kHQQtMLNbIJHgj7z85goH8", "_type": "studioItem", "_updatedAt": "2026-07-17T23:24:03Z", "date": "2026-05-15", "description": "Announcement of the Adam & Ewa premium photography website — smooth GSAP animations, scattered gallery, and 1000-photo virtualization.", "device": "monitor", "frontTexture": { "_type": "image", "asset": { "_ref": "image-f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512-webp", "_type": "reference" } }, "paintedFrontTexture": { "_type": "image", "asset": { "_ref": "image-85434a6feba56b393f5872e16c815e2fce83066d-2048x1024-webp", "_type": "reference" } }, "platform": "linkedin", "seoDescription": "Launch announcement by Ghanshyam Patel (GD) for the Adam & Ewa premium wedding photography website. The post showcases the bespoke React build with GSAP ScrollTrigger animations, FLIP-technique lightbox transitions, and a custom DOM virtualization system handling up to 1000 high-res photos at 60fps. Shared on LinkedIn and X (Twitter).", "seoTitle": "Adam & Ewa Website Launch – GD Dev (LinkedIn & X)", "title": "Adam & Ewa Website Launch", "url": "https://www.linkedin.com/posts/gddev_webdesign-gsap-frontend-activity-7455173978056224768-dyhz" }, { "_createdAt": "2026-07-17T23:17:24Z", "_id": "88522880-608b-4cbd-ac08-e12e99eb46d0", "_rev": "EyALIez9Ug6PSJt2RnZrub", "_type": "studioItem", "_updatedAt": "2026-07-17T23:18:21Z", "date": "2026-07-18", "description": "GD on TikTok — short videos about creative web development, cool website showcases, and coding experiments.", "device": "phone", "frontTexture": { "_type": "image", "asset": { "_ref": "image-c8ad8f3e552d4151cb1b46618f8cad431316953f-1024x2048-webp", "_type": "reference" } }, "paintedFrontTexture": { "_type": "image", "asset": { "_ref": "image-cff3658c47cc85a7ad676f540d26a8e6a0754c3c-512x1024-webp", "_type": "reference" } }, "platform": "tiktok", "seoDescription": "Follow Ghanshyam Patel (GD) on TikTok at @gddev for short-form videos showcasing stunning websites from around the web, creative coding experiments, and behind-the-scenes looks at interactive frontend development. Quick, visual, and fun content for web design enthusiasts.", "seoTitle": "GD on TikTok – Creative Coding & Web Inspiration", "title": "MY TIKTOK", "url": "https://www.tiktok.com/@gddev" }, { "_createdAt": "2026-07-17T23:26:21Z", "_id": "8d7c3ac8-13d1-4b54-8eee-0278d5ed964c", "_rev": "VYQz6kRGBI2TD0HjVxa2e0", "_type": "studioItem", "_updatedAt": "2026-07-17T23:26:55Z", "date": "2026-07-18", "description": "Launch of GD Sketchbook — a curated collection of hand-drawn animated UI components built with React and GSAP.", "device": "monitor", "frontTexture": { "_type": "image", "asset": { "_ref": "image-f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512-webp", "_type": "reference" } }, "paintedFrontTexture": { "_type": "image", "asset": { "_ref": "image-85434a6feba56b393f5872e16c815e2fce83066d-2048x1024-webp", "_type": "reference" } }, "platform": "linkedin", "seoDescription": "Launch announcement by Ghanshyam Patel (GD) for GD Sketchbook — a collection of custom hand-drawn animated UI components built with React and GSAP. The post describes how repeatedly rebuilding the same UI animation patterns across projects led to creating a reusable, open component library with the signature sketch aesthetic. Shared on LinkedIn and X (Twitter).", "seoTitle": "GD Sketchbook UI Components Launch (LinkedIn & X)", "title": "GD Sketchbook – UI Components Launch", "url": "https://www.linkedin.com/posts/gddev_i-kept-rebuilding-the-same-ui-animations-activity-7472981452289163264-gANX" }, { "_createdAt": "2026-07-17T23:25:38Z", "_id": "a491f10e-b9e6-489b-a4e0-a62950a696e3", "_rev": "EyALIez9Ug6PSJt2Rna64R", "_type": "studioItem", "_updatedAt": "2026-07-17T23:26:15Z", "date": "2026-07-04", "description": "A creative coding experiment reimagining the classic Google Antigravity easter egg with AI-powered interactions.", "device": "monitor", "frontTexture": { "_type": "image", "asset": { "_ref": "image-f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512-webp", "_type": "reference" } }, "paintedFrontTexture": { "_type": "image", "asset": { "_ref": "image-85434a6feba56b393f5872e16c815e2fce83066d-2048x1024-webp", "_type": "reference" } }, "platform": "linkedin", "seoDescription": "Creative coding experiment by Ghanshyam Patel (GD) reimagining Google's classic Antigravity easter egg with modern AI-powered interactions and creative frontend techniques. A playful side project demonstrating how creative developers approach experimental web concepts beyond traditional portfolio work. Shared on LinkedIn and X (Twitter).", "seoTitle": "Google Antigravity 2.0 – Creative AI Experiment by GD", "title": "Google Antigravity 2.0 – AI Experiment", "url": "https://www.linkedin.com/posts/gddev_ai-creativecoding-activity-7467908125593976832-o9HE" }, { "_createdAt": "2026-07-17T23:22:20Z", "_id": "b5bc3c4d-bca0-4e2c-9988-76ece381397d", "_rev": "VYQz6kRGBI2TD0HjVxZZQW", "_type": "studioItem", "_updatedAt": "2026-07-17T23:23:20Z", "date": "2026-04-01", "description": "The announcement post for the GD portfolio launch — shared on LinkedIn and X.", "device": "monitor", "frontTexture": { "_type": "image", "asset": { "_ref": "image-f891ca7523f021027cc7b109e81ba3ecc5f5a1b0-1024x512-webp", "_type": "reference" } }, "paintedFrontTexture": { "_type": "image", "asset": { "_ref": "image-85434a6feba56b393f5872e16c815e2fce83066d-2048x1024-webp", "_type": "reference" } }, "platform": "linkedin", "seoDescription": "The original announcement post by Ghanshyam Patel (GD) sharing the launch of his interactive sketch portfolio at gddev.com. Posted on LinkedIn and X (Twitter), the post introduces the walkable 3D corridor concept, hand-drawn textures, and custom shader effects that would later earn FWA Site of the Day, Awwwards Honors, and CSSDA Special Kudos.", "seoTitle": "Portfolio Launch Announcement – GD Dev (LinkedIn & X)", "title": "Portfolio Launch – It's Finally Live", "url": "https://www.linkedin.com/posts/gddev_its-finally-live-i-just-launched-my-new-activity-7441409690342825984-Kgbk" }],
+        awards: []
+      };
+
+      const originalFetch = window.fetch;
+      window.fetch = async function (input, init) {
+        const url = typeof input === 'string' ? input : (input && input.url ? input.url : '');
+        if (url.includes('kv5wjjmj.apicdn.sanity.io') || url.includes('api.sanity.io')) {
+          let result = [];
+          if (url.includes('galleryProject')) {
+            result = cachedData.gallery;
+          } else if (url.includes('studioItem')) {
+            result = cachedData.studio;
+          } else if (url.includes('awardCertificate')) {
+            result = cachedData.awards;
+          }
+
+          return new Response(JSON.stringify({ query: url, result: result, ms: 1 }), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' }
+          });
+        }
+        return originalFetch(input, init);
+      };
+    })();
+  </script>
+
+</head>
+
+<body>
+  <!-- SEO Fallback for WebGL SPAs (2026 Crawl Optimization) -->
+
+  <div id="seo-content" class="sr-only-seo">
+    <header>
+      <h1>GD – Award-Winning Creative Developer | Interactive Websites</h1>
+      <p>Portfolio of Ghanshyam Patel (GD) — creative developer building interactive websites with smooth animations,
+        storytelling, and clean code. Award-winning.</p>
+    </header>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Ghanshyam Patel, known online as GD, is an award-winning creative developer from Poland who builds interactive,
+        engaging websites from scratch. Currently studying Computer Science at the University of Opole, he specializes
+        in handcrafted web experiences with smooth animations, scroll-driven storytelling, and attention to detail that
+        makes every site feel alive. His core toolkit includes React, Next.js, JavaScript, GSAP (GreenSock Animation
+        Platform), and CSS — the foundation for buttery-smooth page transitions, micro-interactions, and
+        scroll-triggered motion. When a project calls for it, he also works with Three.js, WebGL, and custom shaders to
+        create immersive browser-based experiences, but his heart is in clean, well-animated storytelling websites that
+        people actually enjoy exploring. GD is not a designer — he doesn't work in Figma or Photoshop. He sketches ideas
+        on paper and brings them to life directly in code, designing as he builds. He is also not a 3D modeler — he
+        doesn't create models in Blender — but when clients provide ready assets (GLTF, GLB), he knows how to make them
+        move, interact, and perform at 60fps in the browser. His work has earned international recognition including FWA
+        Site of the Day, GSAP Site of the Day, CSS Design Awards, and Awwwards nominations. Beyond portfolio sites, his
+        projects range from a webcam-controlled browser game using MediaPipe AI (67 Game) to premium commercial websites
+        for photography studios with custom DOM virtualization handling 1000+ images. GD is available for freelance
+        creative development projects worldwide.</p>
+      <a href="https://github.com/gdpatel1348-debug">GitHub</a>
+      <a href="https://www.linkedin.com/in/ghanshyam-patel-a01766378?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h3>Adam & Ewa – Premium Photography Website with Smooth Animations</h3>
+          <p>Adam & Ewa is a premium commercial website built from scratch by creative developer Ghanshyam Patel (GD)
+            for a wedding photography and videography duo based in Poland. The project replaces a decade-old legacy site
+            with a bespoke, template-free experience built on React Router v7, GSAP ScrollTrigger, Lenis smooth scroll,
+            and Sanity headless CMS. It features an asymmetrical scattered gallery layout with parallax drift,
+            FLIP-technique shared element lightbox transitions, scroll-driven typography animations with progressive
+            blur reveal, and a custom double-layer DOM virtualization system using IntersectionObserver. This
+            virtualization enables smooth 60fps scrolling through galleries containing up to 1000 high-resolution
+            wedding photos — a massive engineering challenge solved entirely in frontend code. Images are optimized
+            through Sanity's CDN with device-responsive sizing, WebP/AVIF auto-formatting, and LQIP blur-up
+            placeholders. The site scores a perfect 100/100 on Google Lighthouse. Typography combines Cormorant Garamond
+            serif headings with Inter body text on a warm eggshell background. The client manages all content
+            independently through Sanity Studio.</p>
+          <a href="https://www.adam-ewa.pl">Visit Adam & Ewa – Premium Photography Website with Smooth Animations</a>
+        </li>
+        <li>
+          <h3>67 Game – Browser Webcam Game with Real-Time Pose Tracking</h3>
+          <p>67 Game is a browser-based speed challenge created by Ghanshyam Patel (GD) where your webcam becomes the
+            controller. Players perform the viral '67' trend moves as fast as possible within 15 seconds while MediaPipe
+            Pose Landmarker tracks wrist positions in real-time at 60fps — entirely in the browser with no downloads or
+            plugins required. Built with React 19 and MediaPipe WASM running on GPU, the game features a global daily
+            leaderboard powered by Firebase, auto-generated PDF certificates with QR codes, Canvas-based particle
+            effects, and bilingual support in Polish and English. Debuted at the University of Opole Science Festival
+            2026 where over 100 people queued to play. Kids speedran attempts while adults were amazed that real-time
+            computer vision runs natively in a web browser. A project that pushes the boundaries of creative frontend
+            engineering.</p>
+          <a href="https://sixsevengame.vercel.app">Visit 67 Game – Browser Webcam Game with Real-Time Pose Tracking</a>
+        </li>
+        <li>
+          <h3>Young Multi – Artist Website with Custom WebGL Image Distortion</h3>
+          <p>Young Multi is an immersive artist website created by creative developer Ghanshyam Patel (GD) for Polish
+            hip-hop artist Young Multi. The project captures the raw, energetic feel of the artist's music through
+            custom WebGL shader effects — real-time image distortion that warps and bends photographs on mouse movement,
+            powered by GPU-accelerated fragment shaders rather than CSS filters or tricks. The dark, moody layout with
+            smooth GSAP scroll transitions lets the photography breathe while keeping a high-energy visual identity.
+            This was GD's breakthrough project that earned major industry recognition including CSS Design Awards
+            (CSSDA) Site of the Day and Design Nominees Site of the Day, putting his work on the international creative
+            development map. Built with React, WebGL, and GSAP, the project shows how creative coding and custom shaders
+            can transform a standard artist page into an interactive experience that truly matches the musician's brand.
+          </p>
+          <a href="https://young-multi-strona.netlify.app">Visit Young Multi – Artist Website with Custom WebGL Image
+            Distortion</a>
+        </li>
+        <li>
+          <h3>GD Sketchbook – Animated UI Components with Hand-Drawn Style</h3>
+          <p>GD Sketchbook is a collection of custom animated UI components built by creative developer Ghanshyam Patel.
+            Each component features the signature GD hand-drawn sketch aesthetic — pencil textures on interactive
+            elements animated with smooth GSAP transitions in React. The collection showcases that UI doesn't have to
+            follow the same cookie-cutter patterns — a sketched button or a doodle navigation can feel more engaging
+            than a thousand polished gradients. Every component is lightweight, responsive, and built with clean code.
+            It serves as both a personal creative playground and an open resource for developers who want something
+            different for their projects.</p>
+          <a href="https://gd-ui-components.vercel.app">Visit GD Sketchbook – Animated UI Components with Hand-Drawn
+            Style</a>
+        </li>
+      </ul>
+    </section>
+    <section id="studio">
+      <h2>The Studio (Content)</h2>
+      <ul>
+        <li>
+          <h3>Codrops Feature – GD Portfolio Built Without 3D Models (codrops)</h3>
+          <p>Featured article on Codrops (tympanus.net) by Ghanshyam Patel (GD) titled "Sketching the Impossible: A 3D
+            Portfolio Built Without a Single 3D Model." A technical deep-dive into how a complete lack of Blender skills
+            accidentally led to an award-winning interactive corridor built entirely from flat geometry, hand-drawn
+            pencil textures, and custom GLSL shader paint-reveal effects in React Three Fiber. Published on one of the
+            most respected creative frontend development publications in the world.</p>
+          <a
+            href="https://tympanus.net/codrops/2026/06/11/sketching-the-impossible-a-3d-portfolio-built-without-a-single-3d-model/">View
+            Content</a>
+        </li>
+        <li>
+          <h3>GD YouTube Channel – Creative Development Videos (youtube)</h3>
+          <p>The GD YouTube channel by Ghanshyam Patel features longer-form creative web development content including
+            full project walkthroughs, extended coding sessions, website showcase compilations, and behind-the-scenes
+            looks at building interactive websites with React, GSAP, Three.js, and custom shaders. Subscribe for
+            in-depth creative frontend content.</p>
+          <a href="https://www.youtube.com/@gddev">View Content</a>
+        </li>
+        <li>
+          <h3>67 Game Festival Debut – GD Dev (LinkedIn & X) (linkedin)</h3>
+          <p>Post by Ghanshyam Patel (GD) about debuting his browser-based webcam game "67 Game" at the University of
+            Opole Science Festival. Over 100 attendees queued to play — performing the viral 67 trend moves tracked by
+            MediaPipe in real-time via Chrome. Kids speedran attempts, parents were dragged in, and adults kept asking
+            "this is just a website?" Built with React 19, MediaPipe WASM on GPU, Firebase leaderboard, and
+            auto-generated PDF certificates.</p>
+          <a
+            href="https://www.linkedin.com/posts/gddev_100-people-played-a-game-i-coded-using-activity-7462834233238097920-Eg-i">View
+            Content</a>
+        </li>
+        <li>
+          <h3>WebGPU.com Showcase – GD Paper Tear Portfolio (2026) (blog)</h3>
+          <p>The GD portfolio was featured on WebGPU.com, the leading WebGL and WebGPU community showcase. The article,
+            titled "A Paper Tear, a Hand-Drawn Corridor, and Sketches That Finish Themselves," highlights the project's
+            unique approach — a sheet of paper rips open and drops visitors into a hand-drawn corridor where
+            pencil-sketched frames paint themselves in as you walk up to them. Tagged with WebGL, Three.js, GLSL, GSAP,
+            React Three Fiber, and Cartoon Shading.</p>
+          <a href="https://www.webgpu.com/showcase/gd-portfolio-paper-tear-corridor/">View Content</a>
+        </li>
+        <li>
+          <h3>GD on Instagram – Creative Developer Behind the Scenes (instagram)</h3>
+          <p>Follow Ghanshyam Patel (GD) on Instagram at @gd.dev for short-form creative development content, web design
+            inspiration reels, behind-the-scenes glimpses of award-winning projects, and artistic experiments. GD shares
+            the websites and interactive experiences that inspire his work as a creative frontend developer.</p>
+          <a href="https://www.instagram.com/gd_patel_027?srtk=bXFyM251M21tNnBq">View Content</a>
+        </li>
+        <li>
+          <h3>Polish Press – GD Named World's Best Website Creator (blog)</h3>
+          <p>News article by Strzelce360.pl (local Polish press) covering how Ghanshyam Patel, a Computer Science
+            student from Strzelce Opolskie, Poland, earned international recognition as one of the world's top website
+            creators. The article highlights his FWA Site of the Day award and coverage by major industry publications
+            for his interactive sketch portfolio at gddev.com. A hometown story about a creative developer making waves
+            globally.</p>
+          <a
+            href="https://www.strzelce360.pl/artykul/11843,strzelczanin-najlepszym-tworca-stron-internetowych-na-swiecie">View
+            Content</a>
+        </li>
+        <li>
+          <h3>Adam & Ewa Website Launch – GD Dev (LinkedIn & X) (linkedin)</h3>
+          <p>Launch announcement by Ghanshyam Patel (GD) for the Adam & Ewa premium wedding photography website. The
+            post showcases the bespoke React build with GSAP ScrollTrigger animations, FLIP-technique lightbox
+            transitions, and a custom DOM virtualization system handling up to 1000 high-res photos at 60fps. Shared on
+            LinkedIn and X (Twitter).</p>
+          <a href="https://www.linkedin.com/posts/gddev_webdesign-gsap-frontend-activity-7455173978056224768-dyhz">View
+            Content</a>
+        </li>
+        <li>
+          <h3>GD on TikTok – Creative Coding & Web Inspiration (tiktok)</h3>
+          <p>Follow Ghanshyam Patel (GD) on TikTok at @gddev for short-form videos showcasing stunning websites from
+            around the web, creative coding experiments, and behind-the-scenes looks at interactive frontend
+            development. Quick, visual, and fun content for web design enthusiasts.</p>
+          <a href="https://www.tiktok.com/@gddev">View Content</a>
+        </li>
+        <li>
+          <h3>GD Sketchbook UI Components Launch (LinkedIn & X) (linkedin)</h3>
+          <p>Launch announcement by Ghanshyam Patel (GD) for GD Sketchbook — a collection of custom hand-drawn animated
+            UI components built with React and GSAP. The post describes how repeatedly rebuilding the same UI animation
+            patterns across projects led to creating a reusable, open component library with the signature sketch
+            aesthetic. Shared on LinkedIn and X (Twitter).</p>
+          <a
+            href="https://www.linkedin.com/posts/gddev_i-kept-rebuilding-the-same-ui-animations-activity-7472981452289163264-gANX">View
+            Content</a>
+        </li>
+        <li>
+          <h3>Google Antigravity 2.0 – Creative AI Experiment by GD (linkedin)</h3>
+          <p>Creative coding experiment by Ghanshyam Patel (GD) reimagining Google's classic Antigravity easter egg with
+            modern AI-powered interactions and creative frontend techniques. A playful side project demonstrating how
+            creative developers approach experimental web concepts beyond traditional portfolio work. Shared on LinkedIn
+            and X (Twitter).</p>
+          <a href="https://www.linkedin.com/posts/gddev_ai-creativecoding-activity-7467908125593976832-o9HE">View
+            Content</a>
+        </li>
+        <li>
+          <h3>Portfolio Launch Announcement – GD Dev (LinkedIn & X) (linkedin)</h3>
+          <p>The original announcement post by Ghanshyam Patel (GD) sharing the launch of his interactive sketch
+            portfolio at gddev.com. Posted on LinkedIn and X (Twitter), the post introduces the walkable 3D corridor
+            concept, hand-drawn textures, and custom shader effects that would later earn FWA Site of the Day, Awwwards
+            Honors, and CSSDA Special Kudos.</p>
+          <a
+            href="https://www.linkedin.com/posts/gddev_its-finally-live-i-just-launched-my-new-activity-7441409690342825984-Kgbk">View
+            Content</a>
+        </li>
+      </ul>
+    </section>
+    <section id="awards">
+      <h2>Awards & Certificates</h2>
+      <ul>
+        <li>
+          <h3>Awwwards Honorable Mention – GD Portfolio Website (2026)</h3>
+          <p>other - 2026-04-30</p>
+          <p>The GD portfolio by Ghanshyam Patel received an Honorable Mention from Awwwards in April 2026. Awwwards is
+            the world's leading platform recognizing the best of web design and development, with jury members from top
+            agencies and studios globally. The portfolio was evaluated on design, usability, creativity, and content.
+            Built with React, Three.js, and GSAP, the project showcases an interactive sketch-textured corridor where
+            visitors navigate through doors to discover gallery, studio, and contact rooms — a storytelling approach to
+            portfolio design that earned recognition from the industry's most competitive stage.</p>
+          <a href="https://www.awwwards.com/sites/ghanshyam-patel-folio">Link</a>
+        </li>
+        <li>
+          <h3>Muzli Honor – GD Interactive Sketch Portfolio (2026)</h3>
+          <p>other - 2026-07-15</p>
+          <p>The GD portfolio was honored by Muzli (muz.li), a leading design inspiration platform by InVision used by
+            millions of designers worldwide. Muzli curates the best digital projects across the web, and being selected
+            as a Muzli Honor recognizes the portfolio's exceptional creative quality and innovative approach to
+            interactive web design. The portfolio by Ghanshyam Patel features a sketch-textured 3D corridor, custom
+            shader effects, and storytelling-driven navigation built with React and Three.js.</p>
+          <a href="https://muz.li/picked/interactive-3d-sketch-portfolio-gd/">Link</a>
+        </li>
+        <li>
+          <h3>CSSLight Featured of the Day – GD Creative Portfolio (2026)</h3>
+          <p>sotd - 2026-05-08</p>
+          <p>The GD portfolio was selected as Featured of the Day by CSSLight (csslight.com), a web design gallery that
+            highlights professional websites demonstrating excellence in aesthetics, creativity, and coding quality. The
+            portfolio by creative developer Ghanshyam Patel features a unique sketch-textured interactive corridor,
+            custom GLSL shaders, and storytelling-driven navigation built with React, Three.js, and GSAP.</p>
+          <a href="https://www.csslight.com/website/73073/Ghanshyam-GD-Patel-Portfolio">Link</a>
+        </li>
+        <li>
+          <h3>CSSDA Special Kudos – GD Creative Developer Portfolio (2025)</h3>
+          <p>other - 2026-04-25</p>
+          <p>Ghanshyam Patel (GD) was awarded CSS Design Awards Special Kudos for his creative developer portfolio at
+            gddev.com. CSSDA (CSS Design Awards) is a premier international web design and development award platform
+            where projects are judged by an industry panel on UI design, UX innovation, and technical execution. The
+            Special Kudos distinction recognizes projects that demonstrate exceptional quality across all judging
+            criteria. The portfolio features interactive sketch-style visuals, smooth GSAP animations, and a unique
+            room-based navigation system coded entirely from scratch.</p>
+          <a href="https://www.cssdesignawards.com/sites/ghanshyam-patel/">Link</a>
+        </li>
+        <li>
+          <h3>Orpetron Site of the Day – GD Developer Portfolio (2026)</h3>
+          <p>sotd - 2026-04-01</p>
+          <p>The GD portfolio received Site of the Day from Orpetron Web Design Awards (orpetron.com), an international
+            platform recognizing exceptional digital work by freelance designers, creative agencies, and developers. The
+            award honors the portfolio's innovative room-based navigation, sketch-textured visuals, and smooth
+            interactive animations. Created from scratch by creative developer Ghanshyam Patel using React, Three.js,
+            and GSAP.</p>
+          <a href="https://orpetron.com/sites/ghanshyam-patel-portfolio/">Link</a>
+        </li>
+        <li>
+          <h3>Design Nominees Site of the Day – Young Multi Website (2026)</h3>
+          <p>sotd - 2026-01-17</p>
+          <p>The Young Multi artist website by Ghanshyam Patel (GD) was awarded Site of the Day by Design Nominees
+            (designnominees.com), an international platform recognizing outstanding websites, apps, and games. The
+            project features custom WebGL distortion shaders on photography, dark moody aesthetics, and smooth GSAP
+            scroll transitions — an interactive experience that captures the raw energy of the Polish hip-hop artist's
+            music.</p>
+          <a href="https://www.designnominees.com/sites/young-multi">Link</a>
+        </li>
+        <li>
+          <h3>CSSDA Public UI Award – GD Interactive Portfolio Site (2026)</h3>
+          <p>other - 2026-04-25</p>
+          <p>The GD portfolio at gddev.com received the CSS Design Awards Public UI Award through community voting in
+            April 2026. This award recognizes the project's visual interface design — hand-drawn sketch textures on 3D
+            geometry, a custom paint-reveal shader effect on hover, and a warm, cohesive color palette that gives the
+            site a unique handcrafted aesthetic. Created by Ghanshyam Patel using React, Three.js, and GSAP.</p>
+          <a href="https://www.cssdesignawards.com/sites/ghanshyam-patel/">Link</a>
+        </li>
+        <li>
+          <h3>FWA Site of the Day – GD Interactive Sketch Portfolio (2026)</h3>
+          <p>sotd - 2026-04-25</p>
+          <p>Ghanshyam Patel (GD) received the prestigious FWA Site of the Day award on April 25, 2026 for his
+            interactive sketch portfolio at gddev.com. The FWA (Favourite Website Awards) is one of the most recognized
+            international platforms honoring cutting-edge digital design and creative development. The awarded portfolio
+            features a walkable 3D corridor built with React Three Fiber, hand-drawn sketch textures, custom GLSL shader
+            paint-reveal effects, and a multi-input camera system. This recognition confirms the project's innovation in
+            interactive web storytelling and frontend engineering.</p>
+          <a href="https://thefwa.com/cases/ghanshyam-patel-portfolio">Link</a>
+        </li>
+        <li>
+          <h3>CSS Winner Site of the Day – Young Multi Artist Website (2026)</h3>
+          <p>sotd - 2026-01-24</p>
+          <p>The Young Multi artist website by creative developer Ghanshyam Patel (GD) earned CSS Winner Site of the Day
+            on January 24, 2026. The project features custom WebGL image distortion shaders that warp and bend
+            photographs on mouse interaction, delivering a raw, energetic visual experience matching the Polish hip-hop
+            artist's brand. Built with React, WebGL, and GSAP, the site demonstrates how creative frontend code can
+            transform standard artist pages into immersive interactive galleries.</p>
+          <a href="https://www.csswinner.com/details/young-multi-official-experience/19045">Link</a>
+        </li>
+        <li>
+          <h3>CSSDA Public Innovation Award – GD Portfolio Website (2026)</h3>
+          <p>other - 2026-04-25</p>
+          <p>The CSS Design Awards community voted GD's portfolio as a winner of the Public Innovation Award in April
+            2026. The award recognizes the project's innovative approach to portfolio design — replacing traditional
+            page scrolling with an explorable 3D environment, using hand-drawn textures instead of polished 3D models,
+            and implementing a custom GLSL shader system for interactive paint-reveal effects. Built from scratch by
+            Ghanshyam Patel with React Three Fiber and GSAP.</p>
+          <a href="https://www.cssdesignawards.com/sites/ghanshyam-patel/">Link</a>
+        </li>
+        <li>
+          <h3>Design Nominees Site of the Day – GD Portfolio (2026)</h3>
+          <p>sotd - 2026-05-02</p>
+          <p>GD's interactive sketch portfolio at gddev.com was selected as Site of the Day by Design Nominees on May 2,
+            2026. Design Nominees is an international web design awards platform that evaluates projects on creativity,
+            design quality, and technical execution. The portfolio by Ghanshyam Patel features a walkable corridor with
+            hand-drawn textures, interactive door navigation, and custom shader effects — all built from scratch with
+            React and Three.js.</p>
+          <a href="https://www.designnominees.com/sites/ghanshyam-patel-portfoio">Link</a>
+        </li>
+        <li>
+          <h3>Top Design King Site of the Day – GD Portfolio (2026)</h3>
+          <p>sotd - 2026-05-12</p>
+          <p>GD's portfolio at gddev.com was named King of the Day (Site of the Day) by Top Design King
+            (topdesignking.com), an international web design awards platform that showcases and promotes creative
+            websites based on design, usability, and innovation. The portfolio by Ghanshyam Patel features hand-drawn
+            sketch visuals, interactive door navigation, and smooth GSAP-driven animations — a handcrafted web
+            experience built entirely from scratch.</p>
+          <a href="https://topdesignking.com/website/3621/ghanshyam-patel-portfolio">Link</a>
+        </li>
+        <li>
+          <h3>Web Design of the Day – GD Portfolio Website (2026)</h3>
+          <p>sotd - 2026-05-01</p>
+          <p>GD's interactive portfolio at gddev.com was selected as Web Design of the Day by WD awards, a web design
+            gallery that showcases and promotes creative digital projects. The portfolio by Ghanshyam Patel features
+            hand-drawn sketch textures, interactive room navigation, custom shader paint-reveal effects, and smooth GSAP
+            animations — all built from scratch without templates.</p>
+          <a href="https://wdawards.com/web/ghanshyam-patel-folio">Link</a>
+        </li>
+        <li>
+          <h3>Orpetron Site of the Day – Young Multi Artist Website (2026)</h3>
+          <p>sotd - 2026-01-29</p>
+          <p>The Young Multi artist website by Ghanshyam Patel (GD) was awarded Orpetron Site of the Day on January 29,
+            2026. Orpetron Web Design Awards recognizes outstanding creativity and technical execution in digital
+            projects worldwide. The website features custom WebGL image distortion shaders, dark atmospheric layout, and
+            GSAP-powered scroll transitions that capture the energy of the Polish hip-hop artist's brand.</p>
+          <a href="https://orpetron.com/sites/young-multi/">Link</a>
+        </li>
+        <li>
+          <h3>CSS Winner Site of the Day – GD Developer Portfolio (2026)</h3>
+          <p>sotd - 2026-03-25</p>
+          <p>GD's creative developer portfolio at gddev.com was selected as CSS Winner Site of the Day on March 25,
+            2026. CSS Winner (csswinner.com) is an international web design award platform that evaluates websites on
+            design quality, usability, and creative innovation. The portfolio features hand-drawn sketch textures
+            animated with custom shaders, room-based navigation through interactive doors, and buttery-smooth
+            GSAP-powered transitions — all coded from scratch by Ghanshyam Patel without templates or page builders.</p>
+          <a href="https://www.csswinner.com/details/ghanshyam-patel-portfolio/19143">Link</a>
+        </li>
+        <li>
+          <h3>CSSDA Public UX Award – GD Creative Portfolio Website (2026)</h3>
+          <p>other - 2026-04-25</p>
+          <p>Ghanshyam Patel's GD portfolio received the CSS Design Awards Public UX Award through community voting in
+            April 2026. This recognition highlights the project's intuitive user experience — visitors navigate a
+            sketch-textured corridor through interactive doors, with smooth animations and a camera system that responds
+            to scroll, mouse, and mobile gyroscope. The award reflects positive community feedback on the portfolio's
+            navigation flow and interaction design.</p>
+          <a href="https://www.cssdesignawards.com/sites/ghanshyam-patel/">Link</a>
+        </li>
+      </ul>
+    </section>
+    <section id="faq">
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      <article>
+        <h3>What makes GD different from other developers?</h3>
+        <p>GD codes everything from scratch — no WordPress, no Webflow, no templates. His philosophy is "mechanics
+          first": he perfects the layout, scroll behavior, and performance before adding any visual effects. This means
+          every site runs smoothly at 60fps even on mobile phones. He combines award-winning creative execution with
+          solid engineering fundamentals, delivering websites that look impressive and actually perform well under the
+          hood.</p>
+      </article>
+      <article>
+        <h3>What technologies does GD use?</h3>
+        <p>GD's main tools are React, Next.js, JavaScript, GSAP (GreenSock) for animation, and CSS. For smooth scrolling
+          he uses Lenis, and for content management Sanity headless CMS with Vercel hosting. When projects require it,
+          he also works with Three.js, React Three Fiber, and WebGL for interactive browser-based experiences. He codes
+          everything from scratch — no templates, no page builders.</p>
+      </article>
+      <article>
+        <h3>Who is GD and what does he do?</h3>
+        <p>GD is the creative alias of Ghanshyam Patel, a frontend developer from Poland who builds interactive,
+          handcrafted websites from scratch. He focuses on smooth animations, scroll-driven storytelling, and clean code
+          — creating sites that feel alive and engaging. His work ranges from animated portfolio websites to
+          webcam-controlled browser games, and has been recognized with awards including FWA Site of the Day and CSS
+          Design Awards.</p>
+      </article>
+      <article>
+        <h3>What kind of websites does GD build?</h3>
+        <p>GD builds a range of interactive websites — from storytelling portfolios with smooth scroll animations and
+          page transitions, to immersive artist sites with custom visual effects, to clean commercial websites for
+          businesses that need premium aesthetics and fast performance. He prefers projects where animation and user
+          experience tell a story rather than just display content statically. Every project is coded from scratch with
+          no templates.</p>
+      </article>
+      <article>
+        <h3>What is 67 Game and how does it work?</h3>
+        <p>67 Game is a browser-based speed challenge at sixsevengame.vercel.app where your webcam is the controller.
+          You perform the viral '67' trend moves as fast as possible in 15 seconds while MediaPipe tracks your wrists in
+          real-time — entirely in the browser with zero downloads needed. Built with React 19 and MediaPipe WASM on GPU.
+          Features include a global daily leaderboard via Firebase, auto-generated PDF certificates with QR codes,
+          particle effects, and Polish/English language support. Over 100 people queued to play it at a university
+          science festival.</p>
+      </article>
+      <article>
+        <h3>Does GD take freelance projects?</h3>
+        <p>Yes. GD is available for freelance creative development projects worldwide. He works best with clients who
+          have a clear vision or provide designs he can bring to life with animation and code. His sweet spot is
+          storytelling websites with smooth interactions, artist and portfolio sites, and premium business websites. He
+          quotes fixed-price estimates after understanding the full project scope and typically delivers within 4 to 8
+          weeks.</p>
+      </article>
+      <article>
+        <h3>Has GD won any web design awards?</h3>
+        <p>Yes. GD's projects have received multiple international awards including FWA Site of the Day, GSAP Site of
+          the Day, CSS Design Awards Special Kudos, and Awwwards nominations. His Young Multi artist website earned
+          CSSDA Site of the Day and Design Nominees Site of the Day. These awards recognize both the creative quality
+          and technical performance of his work.</p>
+      </article>
+      <article>
+        <h3>Is GD a designer or a 3D modeler?</h3>
+        <p>No. GD is a developer, not a designer or 3D artist. He doesn't work in Figma, Photoshop, or Blender. He
+          sketches layout ideas on paper and then builds directly in code, designing as he goes. When clients provide
+          finished UI designs or ready 3D models (GLTF/GLB files), he can implement and animate them with precision —
+          but the creation of those assets is not his role.</p>
+      </article>
+    </section>
+  </div>
+
+
+  <!-- Noscript strict fallback -->
+  <noscript>
+    Plese enable JavaScript to experience the interactive 3D portfolio of Ghanshyam Patel (GD Dev).
+  </noscript>
+
+  <div id="root"></div>
+
+  <script>
+    window.addEventListener('keydown', (e) => {
+      if ((e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowUp') && window.__portfolio && !window.__portfolio.hasEntered) {
+        window.__portfolio.markEntered();
+      }
+    });
+    document.addEventListener('click', (e) => {
+      const target = e.target;
+      if (target && (target.closest('.badge') || target.closest('#root')) && window.__portfolio && !window.__portfolio.hasEntered) {
+        // If clicking on or near the entrance doors (center 40%-60% X, 30%-70% Y)
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+        if ((x > 0.38 && x < 0.62 && y > 0.35 && y < 0.85) || target.closest('.badge')) {
+          window.__portfolio.markEntered();
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>

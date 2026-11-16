@@ -1,0 +1,22 @@
+{
+  "name": "itom-award-winning-3d-portfolio",
+  "version": "1.0.0",
+  "description": "Hand-drawn paper-crafted 3D interactive portfolio inspired by ITom Dev (itomdev.com)",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  },
+  "keywords": [
+    "threejs",
+    "react",
+    "portfolio",
+    "award-winning",
+    "sketch",
+    "hand-drawn",
+    "3d"
+  ],
+  "author": "Tomasz Szmajda / Recreated with Antigravity",
+  "license": "MIT"
+}
